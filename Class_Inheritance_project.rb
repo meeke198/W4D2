@@ -19,15 +19,15 @@ class Manager < Employee
 
     attr_reader :employees
 
-    def initialize(name, title, salary, boss, *employees)
-        @employee = employees
+    def initialize(name, title, salary, boss)
+        @employees = []
 
-        super(name, title, salary, boss)
+        super
     end
 
-    # def add_employee(employee)
-    #     @employees << employee
-    # end
+    def add_employee(employee)
+        @employees << employee
+    end
 
     def bonus(multiplier)
         sum = 0
