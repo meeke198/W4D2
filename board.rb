@@ -37,8 +37,3 @@ end
 
 
 
-class Piece
-
-
-
-end
